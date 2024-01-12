@@ -1,374 +1,372 @@
 /* Estilos generales */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    WIDTH: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  width: 100%;
 }
 
 header {
-    background-color: #f1f1f1;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: #f1f1f1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .logo img {
-    max-width: 100px; /* Ajusta el tamaño de tu logo */
+  max-width: 100px; /* Ajusta el tamaño de tu logo */
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
 
 .menu li {
-    margin: 0 10px;
-    position: relative;
+  margin: 0 10px;
+  position: relative;
 }
 
 .menu li a {
-    color: #333;
-    text-decoration: none;
-    padding: 14px 16px;
-    display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 14px 16px;
+  display: block;
 }
 
 .menu li a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 /* Estilos para el campo de búsqueda y el botón */
 input[type="text"] {
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    margin-right: 5px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 5px;
 }
 
 button {
-    padding: 8px 15px;
-    border-radius: 5px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 /* Estilos para el submenú */
 .submenu {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    z-index: 1;
-    list-style-type: none;
-    padding: 0;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+  list-style-type: none;
+  padding: 0;
 }
 
 .submenu li {
-    float: none;
+  float: none;
 }
 
 .submenu li a {
-    display: block;
-    color: #333;
-    padding: 12px 16px;
-    text-decoration: none;
+  display: block;
+  color: #333;
+  padding: 12px 16px;
+  text-decoration: none;
 }
 
 .submenu li a:hover {
-    background-color: #ddd;
+  background-color: #ddd;
 }
 
 .menu li:hover .submenu {
-    display: block;
+  display: block;
 }
 
 /* Alineación personalizada */
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .right {
-    margin-left: auto;
+  margin-left: auto;
 }
 
 /* Estilos responsive para tabletas */
 @media only screen and (max-width: 768px) {
-    .menu li {
-        margin: 0 5px;
-    }
+  .menu li {
+    margin: 0 5px;
+  }
 
-    .menu li a {
-        padding: 10px;
-    }
+  .menu li a {
+    padding: 10px;
+  }
 
-    .logo img {
-        max-width: 80px;
-    }
+  .logo img {
+    max-width: 80px;
+  }
 }
 
 /* Estilos para la vista de barrios */
 .barrios {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .barrio {
-    width: 150px;
-    height: 150px;
-    border: 1px solid #ccc;
-    margin: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .barrio p {
-    margin: 0;
+  margin: 0;
 }
 
 .informacion {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 /* Estilos para la galería de imágenes y detalles */
 /* Agrega los estilos necesarios para las imágenes y la información detallada */
 .resultado-pension {
-    display: inline-block;
-    margin: 10px;
+  display: inline-block;
+  margin: 10px;
 }
 
 .resultado-pension img {
-    width: 180px;
-    height: 220px;
+  width: 180px;
+  height: 220px;
 }
 
 /* Estilos para la información de la pensión */
 .detalles-pension {
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: #f9f9f9;
-    margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  margin-top: 20px;
 }
 
 .detalles-pension h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+  font-size: 24px;
+  margin-bottom: 15px;
 }
 
 /* Estilos para la galería de imágenes */
 .galeria-imagenes {
-    margin-top: 20px;
-    width: 100%;
-    position: relative;
-    overflow: hidden;
+  margin-top: 20px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Estilos para el contenedor del slider */
 /* Estilos para el slider */
 .slider {
-    width: 100%;
-    height: 450px;
-    overflow: hidden;
-    object-fit: cover; /* Ajuste de la imagen para llenar el espacio sin deformarla */
-    display: block;
+  width: 100%;
+  height: 450px;
+  overflow: hidden;
+  object-fit: cover; /* Ajuste de la imagen para llenar el espacio sin deformarla */
+  display: block;
 }
 
 .slides {
-    width: 300%; /* Ancho total, 100% por imagen */
-    object-fit: cover;
+  width: 300%; /* Ancho total, 100% por imagen */
+  object-fit: cover;
 }
 
 .slide {
-    width: 33.33%; /* Ancho de cada slide, 100% dividido entre el número de imágenes */
-    object-fit: cover;
-
+  width: 33.33%; /* Ancho de cada slide, 100% dividido entre el número de imágenes */
+  object-fit: cover;
 }
 
 img {
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: cover;
-
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
 }
 
 /* Estilos para los controles del slider */
 .slider {
-    position: relative;
-    width: 100%;
-    height: 350px; /* Ajusta la altura según tu preferencia */
-    overflow: hidden;
-  }
-  
-  .slides {
-    display: flex;
-    width: 300%; /* Ajusta la cantidad de slides que tienes */
-    height: 100%; /* Ocupará el alto del contenedor */
-    animation: cambioSlide 2s infinite; /* Cambia de slide cada 2 segundos */
-  }
-  
-  .slide {
-    flex: 1;
-    width: 100%;
-  }
-  
-  .slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
-  }
-  
+  position: relative;
+  width: 100%;
+  height: 350px; /* Ajusta la altura según tu preferencia */
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  width: 300%; /* Ajusta la cantidad de slides que tienes */
+  height: 100%; /* Ocupará el alto del contenedor */
+  animation: cambioSlide 2s infinite; /* Cambia de slide cada 2 segundos */
+}
+
+.slide {
+  flex: 1;
+  width: 100%;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ajusta la imagen para llenar el contenedor sin deformarla */
+}
+
 /* novedades noticias ultimas pensiones */
 .novedades {
-    padding: 20px;
-    background-color: #f7f7f7;
-    WIDTH: 100%;
-    DISPLAY: inline-block;
+  padding: 20px;
+  background-color: #f7f7f7;
+  width: 100%;
+  display: inline-block;
 }
 
 .novedades h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .novedades .novedad {
-    width: 200px;
-    height: 220px;
-    margin-right: 10px;
-    float: left;
-    border: 1px solid #ccc;
-    padding: 10px;
+  width: 200px;
+  height: 220px;
+  margin-right: 10px;
+  float: left;
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
 .novedades .novedad img {
-    width: 100%;
-    height: auto;
-    margin-bottom: 10px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
 }
 
 .novedades .novedad h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .novedades .novedad p {
-    font-size: 12px;
-    color: #666;
-    line-height: 1.2;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.2;
 }
 .informacion-empresa {
-    padding: 20px;
-    background-color: #f7f7f7;
-    width: 100%;
+  padding: 20px;
+  background-color: #f7f7f7;
+  width: 100%;
 }
 
 .informacion-empresa h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .ventajas {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .ventajas h3,
 .contacto h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
+  font-size: 20px;
+  margin-bottom: 15px;
 }
 /* Ventajas Medios de contacto y Redes sociales */
 
 .informacion-empresa {
-    padding: 20px;
-    background-color: #f7f7f7;
+  padding: 20px;
+  background-color: #f7f7f7;
 }
 
 .informacion-empresa h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+  font-size: 24px;
+  margin-bottom: 20px;
 }
 
 .ventajas {
-    margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
+  margin-bottom: 30px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .ventajas h3 {
-    font-size: 20px;
-    margin-bottom: 15px;
-    width: 100%;
+  font-size: 20px;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .ventaja {
-    width: 50%;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .ventaja img {
-    width: 80px;
-    height: 80px;
-    margin-right: 15px;
+  width: 80px;
+  height: 80px;
+  margin-right: 15px;
 }
 
 .ventaja p {
-    font-size: 16px;
-    width: calc(100% - 95px);
+  font-size: 16px;
+  width: calc(100% - 95px);
 }
 
 /*Footer*/
 
 .footer {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
 }
 
 .footer-contenido {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-columna {
-    flex: 1;
-    text-align: left;
-    padding: 0 20px;
+  flex: 1;
+  text-align: left;
+  padding: 0 20px;
 }
 
 .footer-columna h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
 .redes-sociales {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .redes-sociales li {
-    margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 
 .redes-sociales a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .redes-sociales a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .footer-derechos {
-    margin-top: 20px;
+  margin-top: 20px;
 }
