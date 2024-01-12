@@ -1,1 +1,2 @@
-# ViuniGo
+# ViUniGo
+Aplicativo viviendas universitarias
