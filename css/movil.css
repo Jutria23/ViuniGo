@@ -143,3 +143,51 @@ nav ul {
   color: white;
   font-size: 14px;
 }
+
+/*Footer*/
+
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-contenido {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-columna {
+  flex: 1;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.footer-columna h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.redes-sociales {
+  list-style: none;
+  padding: 0;
+}
+
+.redes-sociales li {
+  margin-bottom: 5px;
+}
+
+.redes-sociales a {
+  color: white;
+  text-decoration: none;
+}
+
+.redes-sociales a:hover {
+  text-decoration: underline;
+}
+
+.footer-derechos {
+  margin-top: 20px;
+}
