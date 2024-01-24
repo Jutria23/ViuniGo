@@ -86,7 +86,7 @@ nav ul {
 
 .menu-slider .slide {
   position: relative;
-  display: inline-block;
+  display: inline;
   text-align: center;
 }
 
@@ -112,7 +112,7 @@ nav ul {
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
-
+    font-size: 12px;
 }
 
 .categorias {
