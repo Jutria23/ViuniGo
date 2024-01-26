@@ -143,6 +143,22 @@ nav ul {
   color: white;
   font-size: 14px;
 }
+/* Estilo para las imágenes en la galería */
+.galeria img {
+  display: block; /* Para centrar la imagen */
+  margin: 0 auto; /* Para centrar la imagen horizontalmente */
+  width: 300px;
+  height: 300px;
+  object-fit: cover; /* Esto asegura que las imágenes se ajusten correctamente */
+  margin-bottom: 10px; /* Espacio entre la imagen y la descripción */
+}
+
+/* Estilo específico para la descripción de servicios */
+.galeria .descripcion-servicios {
+  text-align: center; /* Centrar el texto */
+  font-size: 14px;
+  color: #555; /* Color del texto */
+}
 
 /*Footer*/
 
