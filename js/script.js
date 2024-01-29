@@ -44,7 +44,27 @@ $(window).scroll(function () {
 loadImages();
 
 
-function mostrarImagen(src) {
-    const galeria-2 = document.getElementById('galeria-2');
-    galeria.innerHTML = `<img class="imagen-ampliada" src="${src}" alt="Imagen Ampliada">`;
+
+// Función para mostrar el modal con la imagen ampliada
+function mostrarModal(src) {
+    const modal = document.getElementById('imagen-modal');
+    const imagenAmpliada = document.getElementById('imagen-ampliada');
+    imagenAmpliada.src = src;
+    modal.style.display = 'block';
+}
+
+// Función para cerrar el modal
+function cerrarModal() {
+    const modal = document.getElementById('imagen-modal');
+    modal.style.display = 'none';
+}
+
+// Función para cambiar la imagen en el modal (anterior o siguiente)
+function cambiarImagen(n) {
+    const imagenes = document.getElementsByClassName('imagen-pequena');
+    const imagenAmpliada = document.getElementById('imagen-ampliada');
+    let indexActual = Array.from(imagenes).indexOf(document.activeElement);
+    indexActual = (indexActual + n + imagenes.length) % imagenes.length;
+    imagenAmpliada.src = imagenes[indexActual].src;
+    imagenes[indexActual].focus();
 }

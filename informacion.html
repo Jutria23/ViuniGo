@@ -69,27 +69,33 @@
       <img class="imagen-principal" src="img/barranquilla.jpg" alt="Imagen Principal">
 
       <!-- Cinco imágenes más pequeñas -->
-      <img class="imagen-pequena" src="img/Apartamento-compartido.jpg" alt="Imagen 1">
-      <img class="imagen-pequena" src="img/pension2.jpg" alt="Imagen 2">
-      <img class="imagen-pequena" src="img/Apartamento-compartido.jpg" alt="Imagen 3">
-      <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 4">
-      <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 5">
-      <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 5">  <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 5">
-
+        <img class="imagen-pequena" src="img/Apartamento-compartido.jpg" alt="Imagen 1">
+        <img class="imagen-pequena" src="img/pension2.jpg" alt="Imagen 2">
+        <img class="imagen-pequena" src="img/Apartamento-compartido.jpg" alt="Imagen 3">
+        <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 4">
+        <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 5">
+        <img class="imagen-pequena" src="https://via.placeholder.com/300x150" alt="Imagen 6">
       <!-- Texto descriptivo -->
-      <p class="descripcion">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget est ut arcu hendrerit cursus.
-          Vivamus vel ante vel orci aliquet congue ac eget quam. In hac habitasse platea dictumst.
-          Sed eu felis ut arcu hendrerit cursus vitae sit amet lectus. Duis pharetra efficitur gravida.
-          Curabitur aliquam risus vel augue vulputate tincidunt.
-      </p>
   </div>
 
     <!-- Contenedor para mostrar la información detallada de la pensión -->
     <div id="informacion-pension" class="informacion-pension">
       <!-- Aquí se mostrará la información detallada -->
+      <p class="descripcion">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget est ut arcu hendrerit cursus.
+        Vivamus vel ante vel orci aliquet congue ac eget quam. In hac habitasse platea dictumst.
+        Sed eu felis ut arcu hendrerit cursus vitae sit amet lectus. Duis pharetra efficitur gravida.
+        Curabitur aliquam risus vel augue vulputate tincidunt.
+    </p>
     </div>
-
+    <div id="imagen-modal" class="modal">
+      <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+      <img class="modal-contenido" id="imagen-ampliada">
+      <div class="navegacion-modal">
+          <a class="anterior" onclick="cambiarImagen(-1)">&#10094;</a>
+          <a class="siguiente" onclick="cambiarImagen(1)">&#10095;</a>
+      </div>
+  </div>
     <footer class="footer">
       <div class="footer-contenido">
         <div class="footer-columna">
