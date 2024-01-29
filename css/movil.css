@@ -207,3 +207,39 @@ nav ul {
 .footer-derechos {
   margin-top: 20px;
 }
+
+
+
+/* Estilo específico para los elementos de la galería con informacoion pension*/
+.galeria-2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.imagen-principal {
+  max-width: 60%;
+  height: auto;
+  border: 2px solid #333;
+  margin-bottom: 20px;
+}
+
+.imagen-pequena {
+  max-width: 25%;
+  height: auto;
+  border: 2px solid #333;
+  margin: 0 10px 10px 0;
+}
+
+.descripcion {
+  max-width: 100%;
+  margin-top: 20px;
+}
+
+.imagen-ampliada {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+}

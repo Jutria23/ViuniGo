@@ -42,3 +42,9 @@ $(window).scroll(function () {
 
 // Carga las primeras imágenes al cargar la página
 loadImages();
+
+
+function mostrarImagen(src) {
+    const galeria-2 = document.getElementById('galeria-2');
+    galeria.innerHTML = `<img class="imagen-ampliada" src="${src}" alt="Imagen Ampliada">`;
+}
