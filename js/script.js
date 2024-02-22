@@ -1,6 +1,7 @@
 
 // Scroll Infinito
-
+let imagenes = [];
+let indiceImagenActual = 0;
 let page = 1; // Número de página inicial
 const perPage = 2; // Número de imágenes por página
 
@@ -45,26 +46,33 @@ loadImages();
 
 
 
-// Función para mostrar el modal con la imagen ampliada
-function mostrarModal(src) {
-    const modal = document.getElementById('imagen-modal');
-    const imagenAmpliada = document.getElementById('imagen-ampliada');
-    imagenAmpliada.src = src;
-    modal.style.display = 'block';
+// Mostrar el modal cuando se hace clic en una imagen
+$('.imagen-pequena').on('click', function() {
+    const src = $(this).attr('src');
+    imagenes = $('.imagen-pequena').map(function() {
+        return $(this).attr('src');
+    }).get();
+    indiceImagenActual = imagenes.indexOf(src);
+    mostrarImagen(indiceImagenActual);
+    $('#modal').css('display', 'block');
+});
+// Función para mostrar la imagen en el modal
+function mostrarImagen(indice) {
+    $('#imagen-ampliada').attr('src', imagenes[indice]);
+}
+// Función para cambiar la imagen en el modal
+function cambiarImagen(direccion) {
+    indiceImagenActual += direccion;
+    if (indiceImagenActual < 0) {
+        indiceImagenActual = imagenes.length - 1;
+    } else if (indiceImagenActual >= imagenes.length) {
+        indiceImagenActual = 0;
+    }
+    mostrarImagen(indiceImagenActual);
 }
 
-// Función para cerrar el modal
-function cerrarModal() {
-    const modal = document.getElementById('imagen-modal');
-    modal.style.display = 'none';
-}
+// Cerrar el modal cuando se hace clic en la "X"
+$('.cerrar-modal').on('click', function() {
+    $('#modal').css('display', 'none');
+});
 
-// Función para cambiar la imagen en el modal (anterior o siguiente)
-function cambiarImagen(n) {
-    const imagenes = document.getElementsByClassName('imagen-pequena');
-    const imagenAmpliada = document.getElementById('imagen-ampliada');
-    let indexActual = Array.from(imagenes).indexOf(document.activeElement);
-    indexActual = (indexActual + n + imagenes.length) % imagenes.length;
-    imagenAmpliada.src = imagenes[indexActual].src;
-    imagenes[indexActual].focus();
-}
